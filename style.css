@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-*{
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Outfit', sans-serif;
 }
 
 body {
+    font-family: 'Outfit', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,47 +16,42 @@ body {
     text-align: center;
 }
 
-.container {
-    max-width: 320px;
-    height: 100%;
-}
 .card {
+    max-width: 375px;
     padding: 1rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
     background: #fff;
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 1.3rem
-    
 }
-.card .qr-code {
-    display: flex;
-}
+
 .card img {
     width: 100%;
     border-radius: 0.7rem;
 }
+
 .card h1 {
+    font-weight: 700;
     color: #1f3251;
     font-size: 1.5rem;
     text-align: center;
     margin-top: 1.5rem;
 }
+
 .card p {
+    font-size: 15px;
+    font-weight: 400;
     color: #7b879d;
-    font-size: 0.9rem;
     text-align: center;
     margin-top: 1rem;
-    padding: 0 1rem;
     margin-bottom: 1.5rem;
     letter-spacing: 0.015em;
-  }
-  @media (min-width: 1440px) {
-    .container {
-      margin-top: 9.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        margin: 2rem;
     }
-    .card > h1 {
-        letter-spacing: 0.01em;
-      }
 }
